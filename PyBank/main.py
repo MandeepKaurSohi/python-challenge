@@ -43,7 +43,7 @@ with open(file_path, newline ='') as csvfile:
     average_change = statistics.mean(changes)
     print(f"Average Change:${average_change:.2f}")
     
-    # greatest increase in profits date/amount ovet the entire period
+    # greatest increase in profits date/amount over the entire period
     greatest_increase = max(changes)
     greatest_decrease = min(changes)
     print(f"Greatest Increase in Profits :${greatest_increase}")
