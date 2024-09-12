@@ -3,11 +3,11 @@ import csv
 import statistics
 import calendar
 #CSV path
-main_csv = os.path.join("..","Resources", "budget_data.csv")
+file_path = os.path.join('.','Resources', 'budget_data.csv')
 
 #with open as csv file:
-with open(main_csv) as csvfile:
-    csvreader = csv.reader(csvfile, delimiter = ",")
+with open(file_path, newline ='') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
     #Skip the header
     header = next(csvreader)
   
@@ -49,13 +49,14 @@ with open(main_csv) as csvfile:
     print(f"Greatest Increase in Profits :${greatest_increase}")
     print(f"Greatest Decrease in Profits :${greatest_decrease}")
     
-    greatest_increase_date = changes.index(greatest_increase)+1
-    print(greatest_increase_date)
+   ##Trying to print output in months as well but not working 
+    #greatest_increase_date = changes.index(greatest_increase)+1
+    #print(greatest_increase_date)
+   
+   # greatest_decrease_date = changes.index(greatest_decrease)+1
+    #print(greatest_decrease_date)
     
-    greatest_decrease_date = changes.index(greatest_decrease)+1
-    print(greatest_decrease_date)
-    
-   # output in in a text file:
+   # output in a text file:
     print("Financial Analysis", file= open("main.txt","a"))
     print("------------------------------", file = open("main.txt","a"))
     print(f"Total Months : {total_months}", file= open("main.txt","a"))

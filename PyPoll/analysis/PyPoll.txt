@@ -1,0 +1,10 @@
+election results
+...........
+total votes: {total_vote:,}
+.........
+{candidate_list[k]}: {percentage[k]:.3% ({votes[k]:, })
+{candidate_list[k]}: {percentage[k]:.3% ({votes[k]:, })
+{candidate_list[k]}: {percentage[k]:.3% ({votes[k]:, })
+----------------------------
+Winner: Diana DeGette
+----------------------------

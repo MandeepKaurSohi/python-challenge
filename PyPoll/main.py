@@ -2,11 +2,11 @@ import os
 import csv
 
 #CSV path
-PyPoll_csv = os.path.join("..","Resources", "election_data.csv")
+file_path = os.path.join('.','Resources','election_data.csv')
 
 #with open as csv file:
-with open(PyPoll_csv, newline="", encoding = "utf-8") as csvfile:
-    csvreader = csv.reader(csvfile, delimiter = ",")
+with open(file_path, newline ='') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
     
     # skip the header
     header = next(csvreader)
